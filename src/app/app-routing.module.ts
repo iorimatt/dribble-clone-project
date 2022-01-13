@@ -1,7 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HeaderBarComponent } from './components/header-bar/header-bar.component';
+import { MainComponent } from './views/main/main.component';
 
-const routes: Routes = [];
+
+const routes: Routes = [
+
+{
+
+  path: '',
+  component: MainComponent
+
+}
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
