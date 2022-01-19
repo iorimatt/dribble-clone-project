@@ -8,12 +8,33 @@
         </svg></div>
     <div class="col-span-6">
         <div (mouseleave)="openMenu(-1)" *ngIf="menuOption == 0"
-            class=" grid grid-cols-3 rounded-xl  absolute mt-14 h-1/2 w-5/12 bg-white shadow-lg z-auto">
-            <div class="col-span-2 rounded-l-xl"></div>
-            <div class="bg-neutral-100 rounded-r-xl p-5 font-semibold text-sm">
+            class=" grid grid-cols-3 rounded-xl  absolute mt-14 h-96 w-5/12 bg-white shadow-lg z-auto">
+            <div class="col-span-2 rounded-l-xl h-44">
+
+
+                <ul class="p-5 col-span-3">
+
+
+                    <li class="pb-8 pl-5 " *ngFor="let itens of inspirationOptions">
+
+                        <div class="grid grid-cols-5">
+                            <div [class]="itens.icon"></div>
+                            <div class="col-span-4">
+                                <p class="text-sm cursor-pointer font-bold hover:text-gray-700  text-black">
+                                    {{itens.name}}</p>
+                                <p class="text-xs font-medium cursor-pointer text-slate-400 ">{{itens.description}}</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="bg-neutral-100 rounded-r-xl p-4 font-semibold text-sm ">
                 <h5>Browser Categories</h5>
                 <ul class="pt-3">
-                    <li class="pt-3 text-sm cursor-pointer hover:text-gray-700  text-gray-500"
+                    <li class="pt-3 pb-5 text-sm cursor-pointer hover:text-gray-700   text-gray-500 "
                         *ngFor="let itens of browserCategories">{{itens.name}}</li>
                 </ul>
             </div>
