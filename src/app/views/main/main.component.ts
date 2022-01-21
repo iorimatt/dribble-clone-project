@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataServiceService } from 'src/app/data-service.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: DataServiceService) { }
+
+
+  public profilePic:string = this.data.profileImg
+  public profileName: string = this.data.profileName
+  
+  
 
   ngOnInit(): void {
+
   }
 
 }

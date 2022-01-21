@@ -10,21 +10,16 @@
         <div (mouseleave)="openMenu(-1)" *ngIf="menuOption == 0"
             class=" grid grid-cols-3 rounded-xl  absolute mt-14 h-96 w-5/12 bg-white shadow-lg z-auto">
             <div class="col-span-2 rounded-l-xl h-44">
-
-
                 <ul class="p-5 col-span-3">
-
-
-                    <li class="pb-8 pl-5 " *ngFor="let itens of inspirationOptions">
-
+                    <li class="pb-8 pl-5" *ngFor="let itens of firstOption;" >
                         <div class="grid grid-cols-5">
                             <div [class]="itens.icon"></div>
-                            <div class="col-span-4">
-                                <p class="text-sm cursor-pointer font-bold hover:text-gray-700  text-black">
+                            <div class="col-span-3">
+                                <p    class="text-sm cursor-pointer font-bold hover:text-gray-700  text-black ">
                                     {{itens.name}}</p>
                                 <p class="text-xs font-medium cursor-pointer text-slate-400 ">{{itens.description}}</p>
                             </div>
-                        </div>
+                            </div>
                     </li>
                 </ul>
 
@@ -35,10 +30,27 @@
                 <h5>Browser Categories</h5>
                 <ul class="pt-3">
                     <li class="pt-3 pb-5 text-sm cursor-pointer hover:text-gray-700   text-gray-500 "
-                        *ngFor="let itens of browserCategories">{{itens.name}}</li>
+                        *ngFor="let itens of firstOptionCategories">{{itens.name}}</li>
                 </ul>
             </div>
         </div>
+
+        <div (mouseleave)="openMenu(-1)" *ngIf="menuOption == 1"
+            class=" grid grid-cols-1 rounded-xl  absolute mt-14 ml-20 h-64 w-3/12 bg-white shadow-lg z-auto">
+      
+            <ul class="p-5">
+                    <li class="pb-5 pl-5" *ngFor="let itens of secondOption;" >
+                        <div class="grid grid-cols-5">
+                            <div [class]="itens.icon"></div>
+                            <div class="col-span-4">
+                                <p    class="text-sm cursor-pointer font-bold hover:text-gray-700  text-black ">
+                                    {{itens.name}}</p>
+                                <p class="text-xs font-medium cursor-pointer text-slate-400 ">{{itens.description}}</p>
+                            </div>
+                            </div>
+                    </li>
+                </ul>
+           </div>
         <ul class="flex mt-3">
             <li class="mx-3 font-semibold text-gray-500 text-sm cursor-pointer
                 hover:text-gray-900" (mouseenter)="openMenu(indexOfitens)"
