@@ -13,6 +13,8 @@ export class MainComponent implements OnInit {
 
   public profilePic:string = this.data.profileImg
   public profileName: string = this.data.profileName
+  public CategoryShots: Array<any> = this.data.CategoryShots
+  public MyCollection: Array<any> = this.data.MyCollection
   
   
 

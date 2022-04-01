@@ -56,13 +56,35 @@ export class DataServiceService {
 
   ]
 
-  public contentList:Content[] = [
+  
 
-    {title:'teste', image:'teste',  likes:1,  views:1, author:this.profileName },
-    {title:'teste', image:'teste',  likes:1,  views:1, author:this.profileName },
-    {title:'teste', image:'teste',  likes:1,  views:1, author:this.profileName },   
+  public CategoryShots:Array<any> = [
+
+
+      {name: 'Shots', number: '10'}, {name: 'Boosted Shots', number: '0'}, {name:'Collections', number: '0'}, {name: 'Liked Shots' ,number:'4'}, {name: 'About', number: '2'}
+
 
   ]
+
+
+  public MyCollection:Content[] = [
+
+
+    {author: this.profileName, title:'Prati-Donaduzzi', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17887297/media/be33c3f12af5f1ece1fe7af3f3e015c4.png?compress=1&resize=800x600&vertical=top'},
+    
+    {author: this.profileName, title:'Universidade do Trade', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161214/media/65d205d927760adfc35c8f3265448117.jpg?compress=1&resize=1200x900&vertical=top'},
+    
+    {author: this.profileName, title:'Agrinvest App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161127/media/a0d889be3595b47cc1d5d3fbdbe4fb9a.jpg?compress=1&resize=800x600&vertical=top'},
+
+    { author: this.profileName, title:'iBag App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161058/media/7de1ecb470dcdb4e92c9891ae54a21fe.jpg?compress=1&resize=800x600&vertical=top'}
+
+
+  ]
+
+
+
+
+
   
 
 
