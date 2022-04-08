@@ -16,6 +16,7 @@ export class MainComponent implements OnInit {
   public CategoryShots: Array<any> = this.data.CategoryShots
   public MyCollection: Array<any> = this.data.MyCollection
   
+  public cardTitle = false
   
 
   ngOnInit(): void {

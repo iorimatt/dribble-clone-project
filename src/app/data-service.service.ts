@@ -70,15 +70,18 @@ export class DataServiceService {
   public MyCollection:Content[] = [
 
 
-    {author: this.profileName, title:'Prati-Donaduzzi', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17887297/media/be33c3f12af5f1ece1fe7af3f3e015c4.png?compress=1&resize=800x600&vertical=top'},
+    {author: this.profileName, title:'Prati-Donaduzzi', likes: 2, views: 76, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17887297/media/be33c3f12af5f1ece1fe7af3f3e015c4.png?compress=1&resize=800x600&vertical=top'},
     
-    {author: this.profileName, title:'Universidade do Trade', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161214/media/65d205d927760adfc35c8f3265448117.jpg?compress=1&resize=1200x900&vertical=top'},
+    {author: this.profileName, title:'Universidade do Trade', likes: 0, views: 34, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161214/media/65d205d927760adfc35c8f3265448117.jpg?compress=1&resize=1200x900&vertical=top'},
     
-    {author: this.profileName, title:'Agrinvest App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161127/media/a0d889be3595b47cc1d5d3fbdbe4fb9a.jpg?compress=1&resize=800x600&vertical=top'},
+    {author: this.profileName, title:'Agrinvest App', likes: 2, views: 55, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161127/media/a0d889be3595b47cc1d5d3fbdbe4fb9a.jpg?compress=1&resize=800x600&vertical=top'},
 
-    { author: this.profileName, title:'iBag App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161058/media/7de1ecb470dcdb4e92c9891ae54a21fe.jpg?compress=1&resize=800x600&vertical=top'}
+    { author: this.profileName, title:'iBag App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/17161058/media/7de1ecb470dcdb4e92c9891ae54a21fe.jpg?compress=1&resize=800x600&vertical=top'},
 
-
+    { author: this.profileName, title:'iBag App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/16352305/media/f68f7413cdee93c93890902beef3916f.png?compress=1&resize=800x600&vertical=top'},
+    { author: this.profileName, title:'iBag App', likes: 2, views: 10, image: 'https://cdn.dribbble.com/users/5021028/screenshots/16352885/media/5a0786c5c7629cc408a995dacfa4970f.png?compress=1&resize=1200x900&vertical=top'},
+    { author: this.profileName, title:'iBag App', likes: 4, views: 23, image: 'https://cdn.dribbble.com/users/5021028/screenshots/16352613/media/90983b8ffc45c38f5bce6ab1ba8ce35b.png?compress=1&resize=1200x900&vertical=top'},
+    { author: this.profileName, title:'iBag App', likes: 0, views: 1, image: 'https://cdn.dribbble.com/users/5021028/screenshots/16352328/media/b272f492e54a712f36a33b4b7ea0882b.jpg?compress=1&resize=800x600&vertical=top'}
   ]
 
 
